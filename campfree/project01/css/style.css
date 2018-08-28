@@ -1,0 +1,36 @@
+html, body {
+  font-family: "Arial", Helvetica, sans-serif;
+  min-width: 90%;
+  color:navy;
+}
+
+#main {
+  margin: 30px auto;
+  padding: 10px;
+  border: 0px solid;
+  border-radius: 5px;
+  background:#eee;
+}
+
+img{
+  max-width:100%;
+  display:block;
+  height:auto;
+  margin: auto;
+  border-radius: 5%;
+}
+
+#title-img {
+  text-align: center;
+  margin:25px;
+  font-weight:bold;
+  color: blue;
+}
+
+ul{
+  margin:0 auto;
+  text-align:left;
+}
+li{
+  margin:10px;
+}
