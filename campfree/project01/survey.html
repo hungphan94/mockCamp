@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style-survey.css">
 <title>Survey</title>
 </head>
 <!--
@@ -26,22 +26,80 @@ User Story #16: Inside the form element, I am presented with a button with id="s
   <h1 id="title">Survey Form</h1>
   <p id="description"></p>
   <form id="survey-form" method="GET" acttion="">
-      <label id="name-label">* Name: </label>
-      <input type="text" id="name" placeholder="Enter your name" required/>
+      <div class="rowTab">
+        <div class="labels">
+            <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="rightTab">
+            <input type="text" name="name" id="name"
+            class="input-field"
+            placeholder="Enter your name" required/>
+        </div>
+      </div>
 
-      <label id="email-label"></label>
-      <input type="text" id="email" placeholder="Enter your email" required/>
+      <div class="rowTab">
+        <div class="labels">
+            <label id="email-label" for="email"></label>
+        </div>
+        <div class="rightTab">
+            <input type="text" id="email" name="email"
+            class="input-field"
+            placeholder="Enter your email" required/>
+        </div>
+      </div>
 
-      <label id="number-label"></label>
-      <input type="number" id="number" placeholder="Enter your number" min="1" max="120"/>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age"></label>
+        </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number"
+          class="input-field"
+          placeholder="Enter your number" min="1" max="120"/>
+        </div>
+      </div>
 
-      <select id="dropdown">
+      <div class="rowTab">
+        <div class="labels">
+            Which option are your current role?
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" class="dropdown" name="currentRole">
+              <option disabled value>Select an option</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="other">Other</option>
+          </select>
+        </div>
 
-      </select>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+          </div>
+          <div class="rightTab">
+              <ul>
+                  <li><label>Definitely<input type="radio" value="1" name="userRating" class="userRating"/></label></li>
+                  <li><label>Maybe<input type="radio" value="2" name="userRating" class="userRating"/></label></li>
+                  <li><label>Not Now</label><input type="radio" value="3" name="userRating" class="userRating"/></li>
+              </ul>
+          </div>
+        </div>
 
-      <label><input type="checkbox"/></label>
-
-      <input type="submit" id="submit"/>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="impSk">Things that should be improved in the future</label>
+          </div>
+          <div class="rightTab">
+              <ul>
+                  <li><label>Front-end Projects<input type="checkbox" value="1" name="impSk" class="userRating"/></label></li>
+                  <li><label>Back-end Projects<input type="checkbox" value="2" name="impSk" class="userRating"/></label></li>
+                  <li><label>Data Visualization</label><input type="checkbox" value="3" name="impSk" class="userRating"/></li>
+                  <li><label>Gitter help rooms<input type="checkbox" value="4" name="impSk" class="userRating"/></label></li>
+                  <li><label>Videos<input type="checkbox" value="5" name="impSk" class="userRating"/></label></li>
+              </ul>
+          </div>
+        </div>
+      <button type="submit" id="submit">Submit</button>
   </form>
 </body>
 </html>
