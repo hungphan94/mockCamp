@@ -23,10 +23,10 @@ User Story #15: Inside the form element, I am presented with a textarea at the e
 User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
  -->
 <body>
-  <h1 id="title"></h1>
+  <h1 id="title">Survey Form</h1>
   <p id="description"></p>
-  <form id="survey-form">
-      <label id="name-label"></label>
+  <form id="survey-form" method="GET" acttion="">
+      <label id="name-label">* Name: </label>
       <input type="text" id="name" placeholder="Enter your name" required/>
 
       <label id="email-label"></label>
@@ -39,7 +39,9 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 
       </select>
 
-      <input 
+      <label><input type="checkbox"/></label>
+
+      <input type="submit" id="submit"/>
   </form>
 </body>
 </html>
