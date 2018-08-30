@@ -25,6 +25,8 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 <body>
   <h1 id="title">Survey Form</h1>
   <p id="description"></p>
+
+  <div id="form-outer">
   <form id="survey-form" method="GET" acttion="">
       <div class="rowTab">
         <div class="labels">
@@ -39,7 +41,7 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 
       <div class="rowTab">
         <div class="labels">
-            <label id="email-label" for="email"></label>
+            <label id="email-label" for="email">Email:</label>
         </div>
         <div class="rightTab">
             <input type="text" id="email" name="email"
@@ -50,7 +52,7 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 
       <div class="rowTab">
         <div class="labels">
-          <label id="number-label" for="age"></label>
+          <label id="number-label" for="age">*Age:</label>
         </div>
         <div class="rightTab">
           <input type="number" name="age" id="number"
@@ -71,16 +73,17 @@ User Story #16: Inside the form element, I am presented with a button with id="s
               <option value="other">Other</option>
           </select>
         </div>
+      </div>
 
-        <div class="rowTab">
+      <div class="rowTab">
           <div class="labels">
             <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
           </div>
           <div class="rightTab">
               <ul>
-                  <li><label>Definitely<input type="radio" value="1" name="userRating" class="userRating"/></label></li>
-                  <li><label>Maybe<input type="radio" value="2" name="userRating" class="userRating"/></label></li>
-                  <li><label>Not Now</label><input type="radio" value="3" name="userRating" class="userRating"/></li>
+                  <li class="radio"><label>Definitely<input type="radio" value="1" name="userRating" /></label></li>
+                  <li class="radio"><label>Maybe<input type="radio" value="2" name="userRating" /></label></li>
+                  <li class="radio"><label>Not Now</label><input type="radio" value="3" name="userRating"/></li>
               </ul>
           </div>
         </div>
@@ -91,15 +94,16 @@ User Story #16: Inside the form element, I am presented with a button with id="s
           </div>
           <div class="rightTab">
               <ul>
-                  <li><label>Front-end Projects<input type="checkbox" value="1" name="impSk" class="userRating"/></label></li>
-                  <li><label>Back-end Projects<input type="checkbox" value="2" name="impSk" class="userRating"/></label></li>
-                  <li><label>Data Visualization</label><input type="checkbox" value="3" name="impSk" class="userRating"/></li>
-                  <li><label>Gitter help rooms<input type="checkbox" value="4" name="impSk" class="userRating"/></label></li>
-                  <li><label>Videos<input type="checkbox" value="5" name="impSk" class="userRating"/></label></li>
+                  <li class="checkbox"><label>Front-end Projects<input type="checkbox" value="1" name="impSk"/></label></li>
+                  <li class="checkbox"><label>Back-end Projects<input type="checkbox" value="2" name="impSk"/></label></li>
+                  <li class="checkbox"><label>Data Visualization</label><input type="checkbox" value="3" name="impSk"/></li>
+                  <li class="checkbox"><label>Gitter help rooms<input type="checkbox" value="4" name="impSk"/></label></li>
+                  <li class="checkbox"><label>Videos<input type="checkbox" value="5" name="impSk"/></label></li>
               </ul>
           </div>
         </div>
       <button type="submit" id="submit">Submit</button>
   </form>
+  </div>
 </body>
 </html>

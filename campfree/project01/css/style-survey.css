@@ -7,6 +7,78 @@ html, body{
   font-family: 'Raleway',Helvetica, sans-serif;
 }
 
+#form-outer{
+  background-color: rgb(250, 250, 250);
+  margin: 0 auto;
+  border-radius: 30px;
+  width: 81%;
+  padding: 20px 10px;
+}
+
 .labels{
-  
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 6px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.rightTab {
+  display:inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.input-field{
+    height: 20px;
+    width: 280px;
+    padding: 6px;
+    margin:10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="checkbox"], input[type="radio"]{
+  float:left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: red;
+  border-radius: 3px;
+  color:#FFF;
+  font-size: 1em;
+  height: 50px;
+  width:100px;
+  border: 0px solid;
+}
+
+.dropdown {
+  height: 35px;
+  width:140px;
+  padding:5px;
+  margin:10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  margin-left: -30px;
+  display: block;
+  padding-bottom: 11px;
+}
+
+@@media  screen and
+  (max-width: 833px)
+{
+    .input-field {
+      width:80%;
+    }
+    select{
+      width: 90%;
+    }
 }
