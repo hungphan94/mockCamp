@@ -1,0 +1,47 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+}
+
+body{
+  background: #F2F2F2;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper{
+  position: relative;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  border:0;
+  cursor: pointer;
+  outline:none;
+  background:green;
+  color:yellow;
+}
+
+.grid{
+  display:flex;
+}
