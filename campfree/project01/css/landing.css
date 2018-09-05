@@ -54,6 +54,8 @@ header{
   justify-content: space-around;
   align-items: center;
   background-color: #eee;
+  width: 100%;
+  border-bottom: 2px solid red;
 }
 
 .logo{
@@ -65,8 +67,81 @@ img{
   height: 100%;
   max-width: 400px;
   text-align: center;
+  margin-left: 30px;
 }
 
 nav {
   font-weight: 400;
+}
+
+nav ul{
+  display: flex;
+  width:35vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#identity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 30px;
+}
+
+#identity h2{
+  margin-top:90px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+input {
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input[type="email"]{
+  max-width: 280px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+input[type="email"]:focus{
+  border-color: #66afe9;
+}
+
+input[type="submit"] {
+  padding:9px;
+  margin: 15px 0;
+  border:1px solid red;
+  background-color:red;
+  color:#FFF;
+  font-size: 95%;
+}
+
+input[type="submit"]:hover{
+  background-color: orange;
+  transition: background-color 2s;
+  border:orange;
+}
+
+#features{
+  margin-top:30px;
+}
+
+#features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 20vw;
+  color:darkorange;
 }
