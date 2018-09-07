@@ -277,11 +277,10 @@ input[type="submit"]:hover{
     background-color: black;
     width: 100%;
     border-radius: 20px;
-    color:whitesmoke;
   }
 
   nav ul li a:hover{
-    color:whitesmoke;
+    color:yellow;
   }
 
   .logo{
