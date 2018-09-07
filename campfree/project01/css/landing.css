@@ -122,8 +122,9 @@ input:focus {
 input[type="email"]{
   max-width: 280px;
   width: 100%;
-  padding: 8px 12px;
+  padding: 9px 12px;
   border: 1px solid #eee;
+  font-size: 96%;
 }
 
 input[type="email"]:focus{
@@ -135,7 +136,7 @@ input[type="submit"] {
   border:1px solid red;
   background-color:red;
   color:#FFF;
-  font-size: 95%;
+  font-size: 105%;
   cursor: pointer;
   width: 120px;
   height: 40px;
