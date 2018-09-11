@@ -7,21 +7,34 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
+  background-color: #ebebfa;
 }
 
 p{
   text-align: justify;
+  margin: 5px 0;
+}
+
+#title{
+  font-size: 1.3em;
+  color: yellow;
+  text-align: center;
+  height:37px;
+  border-radius: 29px;
+  background-color: black;
+  width:180px;
 }
 
 #navbar{
   position: fixed;
   min-width: 240px;
-  top:10px;
+  top:0px;
   left:0;
   width: 250px;
   height: 100%;
   border-right: solid;
   border-color:rgba(0,22,22,0.4);
+  background-color: #e6e6ff;
 }
 
 #navbar ul{
@@ -31,32 +44,94 @@ p{
 }
 
 #navbar li{
-  color: #4d4e53;
-  border: 1px solid;
-  border-bottom-width: 0px;
+  border-top: 1px dashed green;
+  border-right: 0;
   padding:12px;
   list-style: none;
   position: relative;
   width: 100%;
 }
 
+#navbar li:first-child {
+  margin-top: 7px;
+  border-top:1px dashed green;
+}
+
+#navbar li:hover{
+  background-color: black;
+}
+
+
 #navbar a {
-    color:#4d4e53;
+    color:navy;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 600;
+}
+
+#navbar a:hover {
+    color:yellow;
 }
 
 #main-doc{
   position: absolute;
   margin: 10px 10px 110px 260px;
+
 }
 
 section article{
   color: #4d4e53;
-  margin:10px;
-  font-size: 0.94em;
+  margin:10px 30px;
+  font-size: 0.98em;
 }
 
 section li{
   margin: 15px 0 0 21px;
+}
+
+.modules {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.modules .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 10%;
+  color:darkorange;
+}
+
+.modules .dev{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 90%;
+}
+
+.modules .dev h3{
+  color:green;
+}
+
+h3{
+  color: blue;
+}
+
+table{
+  margin: 10px 0 10px 0;
+  border: 1px solid #b3b3ff;
+  width: 100%;
+}
+
+th, td{
+  padding: 5px;
+  border: 1px solid #b3b3ff;
+}
+
+th{
+  background-color: #e6e6ff;
+  color: green;
 }

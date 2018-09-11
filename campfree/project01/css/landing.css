@@ -232,7 +232,7 @@ input[type="submit"]:hover{
    font-weight: 700;
    border-radius: 30px 0;
  }
- 
+
 
  #tenor button, #bass button, #valve button{
    width: 120px;
@@ -245,30 +245,30 @@ input[type="submit"]:hover{
    border-radius: 22px;
  }
 
- 
+
  footer{
 	 margin-top:30px;
 	 background-color:black;
 	 padding:20px;
  }
- 
+
  footer ul{
 	 display:flex;
 	 justify-content:flex-end;
  }
- 
+
  footer ul li{
 	padding: 0 12px;
  }
- 
+
   footer ul li a{
 	color: orange;
  }
- 
+
    footer ul li a:hover{
 	font-weight:bold;
  }
- 
+
  span{
 	 color:#F2F2F2;
 	 margin-top: 10px;
@@ -282,11 +282,11 @@ input[type="submit"]:hover{
 	#identity h2{
 		margin:300px auto 20px auto;
 	}
-	
+
 	#features{
 		margin-top:110px;
 	}
-	  
+
 	input[type="submit"] {
 		background-color: green;
 		border:2px solid green;
@@ -312,7 +312,7 @@ input[type="submit"]:hover{
   nav ul li{
     padding: 11px 0px;
   }
-  
+
   nav ul li a:hover{
     background-color: brown;
     border-radius: 20px;
@@ -332,12 +332,12 @@ input[type="submit"]:hover{
     margin: 0 auto;
 
   }
-  
+
   #pricing{
 	   display: flex;
 	   flex-direction:column;
   }
-  
+
   #tenor,#bass,#valve{
 	  max-width: 300px;
 	  width:100%;
