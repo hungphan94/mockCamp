@@ -4,6 +4,27 @@
   padding: 0;
   box-sizing:  border-box;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
 
 
 body{
@@ -265,7 +286,7 @@ input[type="submit"]:hover{
 	color: orange;
  }
 
-   footer ul li a:hover{
+ footer ul li a:hover{
 	font-weight:bold;
  }
 
@@ -316,8 +337,8 @@ input[type="submit"]:hover{
   nav ul li a:hover{
     background-color: brown;
     border-radius: 20px;
-	color:#F2F2F2;
-	padding: 10px 20px;
+  	color:#F2F2F2;
+  	padding: 10px 20px;
   }
 
   .logo{
