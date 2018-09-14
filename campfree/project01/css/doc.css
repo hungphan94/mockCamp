@@ -44,6 +44,15 @@ p{
   margin: 5px 0;
 }
 
+#toggle{
+  display: none;
+}
+
+label {
+  font-size: 1.4em;
+  color:green;
+  display: none;
+}
 #title{
   font-size: 1.3em;
   color: yellow;
@@ -114,6 +123,7 @@ p{
 
 #navbar #vertical-function a {
     color:navy;
+    font-size: 1.1em;
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
@@ -205,7 +215,7 @@ th{
 
   #main-doc{
     position: relative;
-    margin: 200px 0 0 0;
+    margin: 90px 0 0 0;
   }
 
   #logo{
@@ -231,22 +241,38 @@ th{
   {
     font-size: 1.0em;
     color:orange;
+
   }
+
+  label{
+    color:orange;
+    font-size: 1.4em;
+    display: block;
+    cursor: pointer;
+  }
+
   #navbar #vertical-function li
   {
-    padding:8px 29px;
+    padding:9px 29px;
+    border-bottom: 1px dashed #4d6853;
   }
-  #navbar #vertical-function li a
+
+  #toggle:checked + #vertical-function {
+      display: block;
+  }
+
+  #navbar #vertical-function a:hover
   {
-    font-size: 0.95em;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #000;
   }
   #navbar #vertical-function{
     position:absolute;
     top:80px;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: auto;
+    height: 300px;
     width: 100%;
+    display: none;
+    background-color: #d2f7da;
   }
 
   #title{
